@@ -1,9 +1,9 @@
-import React, { Fragment } from "react";
-import { theme, Divider } from "antd";
+import React, { Fragment, useContext } from "react";
+import { Divider } from "antd";
+import ThemeContext from "../ThemeContext";
 
 const Project = () => {
-  const { useToken } = theme;
-  const { token } = useToken();
+  const { token } = useContext(ThemeContext);
 
   return (
     <Fragment>
